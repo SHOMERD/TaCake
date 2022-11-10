@@ -9,6 +9,8 @@ TagManager:
   - Finish2
   - jump_area
   - Levels
+  - 1
+  - Spawner
   layers:
   - Default
   - TransparentFX

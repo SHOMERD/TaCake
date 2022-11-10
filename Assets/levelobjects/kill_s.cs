@@ -23,7 +23,6 @@ public class kill_s : MonoBehaviour
 
     private void reloud() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-
     }
 
 }

@@ -15,10 +15,4 @@ public class cake_table : MonoBehaviour
         sprite.sprite = cake1;
     }
 
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
