@@ -83,8 +83,6 @@ public class guy_muve : MonoBehaviour
         IsGrounded1 = Physics2D.OverlapCircle(GroundCheck1.position, CheckRadius, TheGround);
         if (Input.GetButtonDown("Jump"))
             Jump();
-
-
     }
 
 

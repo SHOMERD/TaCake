@@ -31,7 +31,7 @@ public class LevelsSckript : MonoBehaviour
             if (collision.tag == "Player")
             {
                 duam gamer = Pleyr.GetComponent<duam>();
-                gamer.GoToScene = GoToWhatLeve;
+                gamer.GoToScene = GoToWhatLeve-1;
                 GoButom.SetActive(true);
             }
     }

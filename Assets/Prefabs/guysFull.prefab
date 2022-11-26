@@ -39,9 +39,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 658197666743293934}
     m_Modifications:
+    - target: {fileID: 591999680778925573, guid: 532eaea1c4ebf534682cc489b34fad70, type: 3}
+      propertyPath: GroundCheck1
+      value: 
+      objectReference: {fileID: 7690031996559072942}
     - target: {fileID: 591999680778925956, guid: 532eaea1c4ebf534682cc489b34fad70, type: 3}
       propertyPath: m_AngularDrag
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 591999680778925959, guid: 532eaea1c4ebf534682cc489b34fad70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 591999680778926075, guid: 532eaea1c4ebf534682cc489b34fad70, type: 3}
       propertyPath: m_LocalPosition.x
@@ -167,6 +175,10 @@ PrefabInstance:
       propertyPath: GroundCheck1
       value: 
       objectReference: {fileID: 8527478032968835450}
+    - target: {fileID: 3536641416570231497, guid: 532eaea1c4ebf534682cc489b34fad70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 3536641416570231498, guid: 532eaea1c4ebf534682cc489b34fad70, type: 3}
       propertyPath: m_AngularDrag
       value: 0.5
@@ -225,6 +237,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 673326d1d8e433c4ab0ead0a7a0df33b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &7690031996559072942 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3415053961390331823, guid: 532eaea1c4ebf534682cc489b34fad70, type: 3}
+  m_PrefabInstance: {fileID: 5034125122663647489}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8457491035034603428
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -11,6 +11,7 @@ TagManager:
   - Levels
   - 1
   - Spawner
+  - MenuGuy
   layers:
   - Default
   - TransparentFX

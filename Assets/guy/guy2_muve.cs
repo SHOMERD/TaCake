@@ -78,7 +78,7 @@ public class guy2_muve : MonoBehaviour
     private void Update()
     {
         IsGrounded = Physics2D.OverlapCircle(GroundCheck.position, CheckRadius, TheGround);
-        IsGrounded1 = Physics2D.OverlapCircle(GroundCheck.position, CheckRadius, TheGround);
+        IsGrounded1 = Physics2D.OverlapCircle(GroundCheck1.position, CheckRadius, TheGround);
         if (Input.GetButtonDown("Jump"))
             Jump();
 
@@ -88,7 +88,7 @@ public class guy2_muve : MonoBehaviour
 
     private void Jump()
     {
-        if (IsGrounded == true|| IsGrounded1 == true)
+        if (IsGrounded == true || IsGrounded1 == true)
         {
             rb.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
         }
