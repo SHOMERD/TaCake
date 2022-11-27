@@ -69,8 +69,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6958243550598945680}
+  - component: {fileID: 538502016879981893}
   - component: {fileID: 638016586177329371}
-  - component: {fileID: 6013130462680247641}
   - component: {fileID: 27656231757060917}
   - component: {fileID: 2644441506835827792}
   m_Layer: 6
@@ -100,6 +100,29 @@ Transform:
   m_Father: {fileID: 6063292458173912292}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &538502016879981893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466734731178434893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 036f0265efcae804e9243e483435ecb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedN: -11
+  jumpForce: 10
+  speed: 0
+  IsGrounded: 0
+  IsGrounded1: 0
+  GroundCheck1: {fileID: 8759684435845635233}
+  GroundCheck: {fileID: 3735691849635504811}
+  CheckRadius: 0.001
+  TheGround:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!212 &638016586177329371
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -151,30 +174,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6013130462680247641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1466734731178434893}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 673326d1d8e433c4ab0ead0a7a0df33b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedN: 11
-  jumpForce: 10
-  speed: 11
-  can_jump: 1
-  IsGrounded: 0
-  IsGrounded1: 0
-  GroundCheck: {fileID: 3735691849635504811}
-  GroundCheck1: {fileID: 8759684435845635233}
-  CheckRadius: 0.05
-  TheGround:
-    serializedVersion: 2
-    m_Bits: 64
 --- !u!61 &27656231757060917
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1115,7 +1114,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 6013130462680247641}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: guy2_muve, Assembly-CSharp
           m_MethodName: OnButton_RightDown
           m_Mode: 1
@@ -1143,7 +1142,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 6013130462680247641}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: guy2_muve, Assembly-CSharp
           m_MethodName: OnButton_MuveUp
           m_Mode: 1
@@ -1407,7 +1406,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 6013130462680247641}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: guy2_muve, Assembly-CSharp
           m_MethodName: OnButton_UpDown
           m_Mode: 1
@@ -1569,7 +1568,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 6013130462680247641}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: guy2_muve, Assembly-CSharp
           m_MethodName: OnButton_leftDown
           m_Mode: 1
@@ -1597,7 +1596,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 6013130462680247641}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: guy2_muve, Assembly-CSharp
           m_MethodName: OnButton_MuveUp
           m_Mode: 1

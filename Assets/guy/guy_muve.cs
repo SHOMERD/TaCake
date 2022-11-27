@@ -12,7 +12,6 @@ public class guy_muve : MonoBehaviour
 
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
-//public bool can_jump =true;
 
     public bool IsGrounded;
     public bool IsGrounded1;
@@ -23,8 +22,6 @@ public class guy_muve : MonoBehaviour
     //public AudioSource RunSaund;
     //public AudioSource JampSaund;
 
-    //public guy2_muve kol2;
-    //public GameObject plaer2;
 
     private void Awake()
     {
@@ -32,7 +29,6 @@ public class guy_muve : MonoBehaviour
         sprite = GetComponentInChildren<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         //RunSaund = GetComponentInChildren<AudioSource>();
-        //plaer2 = GetComponent<guy2> ();
     }
 
     private void Run()
@@ -95,36 +91,5 @@ public class guy_muve : MonoBehaviour
             //JampSaund.Play();
         }
     }
-
-
-
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-
-    //    //if (collision.tag == "Finish" && can_LoadScene == true)
-    //    //{
-    //    //    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    //    //}
-        
-
-    //    //if (collision.tag == "Finish2")
-    //    //{
-    //    //    can_LoadScene = true;
-    //    //}
-        
-    //    if (collision.tag == "jump_area")
-    //    {
-    //        can_jump = true;
-    //    }
-    //}
-    //private void OnTriggerExit2D(Collider2D collision)
-    //{
-    //    if (collision.tag == "jump_area")
-    //    {
-    //        can_jump = false;
-    //    }
-    //}
-
-
 
 }

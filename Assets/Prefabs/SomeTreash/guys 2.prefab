@@ -40,7 +40,7 @@ GameObject:
   m_Component:
   - component: {fileID: 591999680778926075}
   - component: {fileID: 591999680778925959}
-  - component: {fileID: 591999680778925573}
+  - component: {fileID: 1461999717218351761}
   - component: {fileID: 591999680778925957}
   - component: {fileID: 591999680778925956}
   m_Layer: 6
@@ -117,7 +117,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &591999680778925573
+--- !u!114 &1461999717218351761
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -126,17 +126,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 591999680778926074}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 673326d1d8e433c4ab0ead0a7a0df33b, type: 3}
+  m_Script: {fileID: 11500000, guid: 036f0265efcae804e9243e483435ecb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speedN: -11
   jumpForce: 10
   speed: 0
-  can_jump: 1
   IsGrounded: 0
   IsGrounded1: 0
+  GroundCheck1: {fileID: 3415053961390331823}
   GroundCheck: {fileID: 3599092560611591101}
-  GroundCheck1: {fileID: 0}
   CheckRadius: 0.001
   TheGround:
     serializedVersion: 2
@@ -324,7 +323,7 @@ MonoBehaviour:
   speed: 11
   IsGrounded: 0
   IsGrounded1: 0
-  GroundCheck1: {fileID: 0}
+  GroundCheck1: {fileID: 3714201095106553979}
   GroundCheck: {fileID: 635310663272754931}
   CheckRadius: 0.001
   TheGround:

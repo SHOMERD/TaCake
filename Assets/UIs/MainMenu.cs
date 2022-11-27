@@ -6,6 +6,7 @@ public class MainMenu : MonoBehaviour
 {
     int levelUnLock;
     public GameObject text;
+
     private void Awake()
     {
         Time.timeScale = 1f;

@@ -777,6 +777,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 538502016879981893, guid: 9e444aa9355e65a4498e82e12d2f0a3f, type: 3}
+      propertyPath: speedN
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 2799436528367281495, guid: 9e444aa9355e65a4498e82e12d2f0a3f, type: 3}
       propertyPath: m_Name
       value: guysWdeph

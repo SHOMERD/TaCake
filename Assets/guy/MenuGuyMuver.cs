@@ -8,20 +8,26 @@ public class MenuGuyMuver : MonoBehaviour
     public int Way;
     public int speedN, res = 100, timer = 0;
     private Rigidbody2D rb;
+    private SpriteRenderer sprite;
+    public Sprite[] SpriteMass;
+
+    
     // Start is called before the first frame update
     void Start()
     {
+        sprite = GetComponentInChildren<SpriteRenderer>();
+        sprite.sprite = SpriteMass[Random.Range(0, SpriteMass.Length)];
         rb = GetComponent<Rigidbody2D>();
-        speedN = Random.Range(2, 11);
+        speedN = Random.Range(4, 15);
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         Run();
         timer++;
         if(timer > res){
-            res = Random.Range(100, 700);
+            res = Random.Range(100, 500);
             timer = 0;
             Jump();
         }

@@ -10,11 +10,11 @@ public class MenuSpavner : MonoBehaviour
 
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         timer++;
         if(timer > res){
-            res = Random.Range(100, 700);
+            res = Random.Range(200, 700);
             timer = 0;
             Spavn();
         }
@@ -26,7 +26,7 @@ public class MenuSpavner : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if(other.tag == "MenuGuy"){
+        if(other.tag == "MenuGuy" && other.GetComponent<MenuGuyMuver>().Way != ThisWay){
             Destroy(other.gameObject);
         }
     }
