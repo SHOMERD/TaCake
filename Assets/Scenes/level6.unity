@@ -619,11 +619,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6740278962076992510, guid: ed6b1370e7e8bcf40bf2275e951546f7, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: OnButton_RightDown
+      value: OnButton_leftDown
+      objectReference: {fileID: 0}
+    - target: {fileID: 6740278962076992510, guid: ed6b1370e7e8bcf40bf2275e951546f7, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: guy_muve, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6740278962579143914, guid: ed6b1370e7e8bcf40bf2275e951546f7, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: OnButton_leftDown
+      value: OnButton_RightDown
       objectReference: {fileID: 0}
     - target: {fileID: 8415084213952762804, guid: ed6b1370e7e8bcf40bf2275e951546f7, type: 3}
       propertyPath: m_LocalPosition.x

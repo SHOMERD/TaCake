@@ -168,6 +168,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3536641416570231496, guid: 532eaea1c4ebf534682cc489b34fad70, type: 3}
+      propertyPath: speed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3536641416570231496, guid: 532eaea1c4ebf534682cc489b34fad70, type: 3}
       propertyPath: RunSaund
       value: 
       objectReference: {fileID: 0}
@@ -226,15 +230,15 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3714201095106553979, guid: 532eaea1c4ebf534682cc489b34fad70, type: 3}
   m_PrefabInstance: {fileID: 5034125122663647489}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5614857003878088452 stripped
+--- !u!114 &5879131415718261648 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 591999680778925573, guid: 532eaea1c4ebf534682cc489b34fad70, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1461999717218351761, guid: 532eaea1c4ebf534682cc489b34fad70, type: 3}
   m_PrefabInstance: {fileID: 5034125122663647489}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 673326d1d8e433c4ab0ead0a7a0df33b, type: 3}
+  m_Script: {fileID: 11500000, guid: 036f0265efcae804e9243e483435ecb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &7690031996559072942 stripped
@@ -255,7 +259,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2942331908630268851, guid: 81e4a3be55e26264d99c86cd501c2ef0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2942331908630268855, guid: 81e4a3be55e26264d99c86cd501c2ef0, type: 3}
       propertyPath: m_Pivot.x
@@ -348,7 +352,7 @@ PrefabInstance:
     - target: {fileID: 2942331908641043278, guid: 81e4a3be55e26264d99c86cd501c2ef0, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 5614857003878088452}
+      objectReference: {fileID: 5879131415718261648}
     - target: {fileID: 2942331908641043278, guid: 81e4a3be55e26264d99c86cd501c2ef0, type: 3}
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -356,7 +360,7 @@ PrefabInstance:
     - target: {fileID: 2942331908641043278, guid: 81e4a3be55e26264d99c86cd501c2ef0, type: 3}
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 5614857003878088452}
+      objectReference: {fileID: 5879131415718261648}
     - target: {fileID: 2942331908641043278, guid: 81e4a3be55e26264d99c86cd501c2ef0, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnButton_RightDown
@@ -373,6 +377,14 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: OnButton_MuveUp
       objectReference: {fileID: 0}
+    - target: {fileID: 2942331908641043278, guid: 81e4a3be55e26264d99c86cd501c2ef0, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: guy_muve, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2942331908641043278, guid: 81e4a3be55e26264d99c86cd501c2ef0, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: guy_muve, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 2942331909279747162, guid: 81e4a3be55e26264d99c86cd501c2ef0, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -380,7 +392,7 @@ PrefabInstance:
     - target: {fileID: 2942331909279747162, guid: 81e4a3be55e26264d99c86cd501c2ef0, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 5614857003878088452}
+      objectReference: {fileID: 5879131415718261648}
     - target: {fileID: 2942331909279747162, guid: 81e4a3be55e26264d99c86cd501c2ef0, type: 3}
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -388,7 +400,7 @@ PrefabInstance:
     - target: {fileID: 2942331909279747162, guid: 81e4a3be55e26264d99c86cd501c2ef0, type: 3}
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 5614857003878088452}
+      objectReference: {fileID: 5879131415718261648}
     - target: {fileID: 2942331909279747162, guid: 81e4a3be55e26264d99c86cd501c2ef0, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnButton_leftDown
@@ -405,6 +417,14 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: OnButton_MuveUp
       objectReference: {fileID: 0}
+    - target: {fileID: 2942331909279747162, guid: 81e4a3be55e26264d99c86cd501c2ef0, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: guy_muve, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2942331909279747162, guid: 81e4a3be55e26264d99c86cd501c2ef0, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: guy_muve, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 9167156592088543019, guid: 81e4a3be55e26264d99c86cd501c2ef0, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -412,7 +432,15 @@ PrefabInstance:
     - target: {fileID: 9167156592088543019, guid: 81e4a3be55e26264d99c86cd501c2ef0, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 5614857003878088452}
+      objectReference: {fileID: 5879131415718261648}
+    - target: {fileID: 9167156592088543019, guid: 81e4a3be55e26264d99c86cd501c2ef0, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OnButton_UpDown
+      objectReference: {fileID: 0}
+    - target: {fileID: 9167156592088543019, guid: 81e4a3be55e26264d99c86cd501c2ef0, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: guy_muve, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81e4a3be55e26264d99c86cd501c2ef0, type: 3}
 --- !u!224 &6740278962577835027 stripped

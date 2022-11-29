@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class guy_muve : MonoBehaviour
 {
-    [SerializeField] public float speedN = 11f;
-    [SerializeField] public float jumpForce = 13f;
+    [SerializeField] public float speedN;
+    [SerializeField] public float jumpForce = 10f;
     public float speed;
 
     private Rigidbody2D rb;
@@ -47,13 +47,11 @@ public class guy_muve : MonoBehaviour
     }
     public void OnButton_leftDown()
     {
-        speed = speedN * -1;
-        RunB();
+        speed = -1;
     }
     public void OnButton_RightDown()
     {
-        speed = speedN; 
-        RunB();
+        speed = 1; 
     }
     public void OnButton_MuveUp() 
     {
@@ -68,20 +66,29 @@ public class guy_muve : MonoBehaviour
     private void FixedUpdate()
     {
         
-        if (true)
+        if (speed == 1 || speed == -1){
             RunB();
-        if (Input.GetButton("Horizontal"))
+        }
+        else if (Input.GetButton("Horizontal")){
             Run();
+        }
     }
     private void Update()
     {
         IsGrounded = Physics2D.OverlapCircle(GroundCheck.position, CheckRadius, TheGround);
         IsGrounded1 = Physics2D.OverlapCircle(GroundCheck1.position, CheckRadius, TheGround);
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump"))  
+        {  
             Jump();
+        }
     }
 
-
+    // private void OnTriggerEnter2D(Collider2D other) {
+    //     Debug.LogError(other.tag);
+    // }
+    // private void OnTriggerExit2D(Collider2D other) {
+    //     Debug.LogError(" sgksgks;gmgs;lgj;sejg;jg;j"+other.tag);
+    // }
 
     private void Jump()
     {

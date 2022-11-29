@@ -181,6 +181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GO: {fileID: 8771538166347677117}
+  Ghits: {fileID: 0}
 --- !u!1 &8771538166347677117
 GameObject:
   m_ObjectHideFlags: 0
